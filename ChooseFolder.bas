@@ -8,6 +8,7 @@ Dim strFolder As String
     End With
     
     If strFolder <> "" Then
+        Sheets("Sheet1").Range("G1").Value = strFolder
         OpenFiles.recordFiles (strFolder + "\") 'as stated in OpenFiles module
     End If
 End Sub
